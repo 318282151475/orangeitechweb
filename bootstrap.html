@@ -1,0 +1,831 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangeItech | Bootstrap</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style1.css" type="text/css">
+    <link rel="stylesheet" href="css/cources.css" type="text/css">
+    <link rel="stylesheet" href="css/tabdesign.css" type="text/css">
+    <link rel="shortcut icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/buttonIcon.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="css/dm.css">
+
+</head>
+
+<style>
+    #course_contents ul {
+        list-style: none;
+        font-size: 15;
+    }
+
+    .course-card {
+        margin-top: 3%;
+    }
+
+
+    #list_2 {
+        list-style: none;
+        font-size: 15;
+    }
+
+    #pdf_download {
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+
+
+
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 15px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    /* new style */
+    /* Set height of body and the document to 100% */
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial;
+    }
+
+    /* Style tab links */
+    .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+    .tablink:hover {
+        background-color: #777;
+    }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+
+    #Home {
+        color: black;
+    }
+
+
+
+    #Contact {
+        color: black;
+    }
+
+    .site-btn {
+        background-color: orange;
+        border-radius: 8px;
+    }
+
+    .site-btn:hover {
+        background-color: rgb(133, 133, 133);
+    }
+
+    #copyright {
+        text-align: center;
+
+    }
+
+    #copyright p {
+        color: #dacdcd;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <!-- <div class="offcanvas__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div> -->
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <span>Call us</span>
+            <h4>+91 9975708774</h4>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!--Header Section Start-->
+    <header class="header">
+        <div class="Wrapper row0">
+            <a href="https://www.facebook.com/orangeitech">
+                <i class="fa fa-facebook fa-lg" style="color:orange;"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/orangeitech">
+                <i class="fa fa-instagram fa-lg" style="color:orange;"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo " style="float: left; size: auto;">
+                        <a href="index.html">
+                            <img src="img/logo.png" style=" width:45%  ;height: auto;" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Courses</a>
+                                <ul class="dropdown1" style=" width:100% !important;
+                          height: auto !important;">
+                                    <div class="row col-md-12">
+                                        <div class="col-md-3" style="padding-top: 10px;">
+                                            <div class="sub-courses-row1">
+                                                <span class="fa fa-circle" aria-hidden="true"></span>
+                                                &nbsp; Mobile
+                                   Application
+                                   Development
+                                            </div>
+                                            <li>
+                                                <a href="androidExpert.html">Android App Development</a>
+                                            </li>
+                                        </br>
+                                        <div class="sub-courses-row1">
+                                            <span class="fa fa-circle" aria-hidden="true"></span>
+                                            &nbsp;Database Technologies
+                                        </div>
+                                        <li>
+                                            <a href="#">SQL</a>
+                                        </li>
+                                    </div>
+                                    <div class="col-md-3" style="padding-top: 10px;">
+                                        <div class="sub-courses-row1">
+                                            <span class="fa fa-circle" aria-hidden="true"></span>
+                                            &nbsp; Programming Languages
+                                        </div>
+                                        <li>
+                                            <a href="./cProgramming.html">C Programming</a>
+                                        </li>
+                                        <li>
+                                            <a href="cplusProg.html">C++ Programming</a>
+                                        </li>
+                                        <li>
+                                            <a href="./ds.html">Data Structure using C, C++</a>
+                                        </li>
+                                        <li>
+                                            <a href="./python.html">Python</a>
+                                        </li>
+                                    </br>
+                                    <div class="sub-courses-row1">
+                                        <span class="fa fa-circle" aria-hidden="true"></span>
+                                        &nbsp;Java Technologies
+                                    </div>
+                                    <li>
+                                        <a href="javaExpert.html">Core Java</a>
+                                    </li>
+                                    <li>
+                                        <a href="javaExpert.html">Adv. Java(Sarvlet, JSP)</a>
+                                    </li>
+                                    <li>
+                                        <a href="./javaExpert.html">JavaExpert</a>
+                                    </li>
+                                    <!-- <li><a href="#"></a></li> -->
+                                </div>
+                                <div class="col-md-3" style="padding-top: 10px;">
+                                    <div class="sub-courses-row1">
+                                        <span class="fa fa-circle" aria-hidden="true"></span>
+                                        &nbsp;  Web Technologies
+                                    </div>
+                                    <li>
+                                        <a href="./webExpert.html">Web Expert</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Final Website/angular_js.html">Angular JS</a>
+                                    </li>
+                                    <li>
+                                        <a href="nodejs.html">Angular and Node.JS</a>
+                                    </li>
+                                    <li>
+                                        <a href="reactjs.html">React JS and React Native</a>
+                                    </li>
+                                    <li>
+                                        <a href="php.html">PHP/MySQL</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Final Website/bootstrap.html">Bootstrap</a>
+                                    </li>
+                                </br>
+                                <div class="sub-courses-row1">
+                                    <span class="fa fa-circle" aria-hidden="true"></span>
+                                    &nbsp; Software Testing Courses
+                                </div>
+                                <li>
+                                    <a href="testing.html">Software Testing</a>
+                                </li>
+                                <!-- <li><a href="#"></a></li>            
+                                   <li><a href="#"></a></li>             -->
+                                <!-- <li><a href="#"></a></li> -->
+                            </div>
+                            <div class="col-md-3" style="padding-top: 10px;">
+                                <div class="sub-courses-row1">
+                                    <span class="fa fa-circle" aria-hidden="true"></span>
+                                    &nbsp; Industrial Courses
+                                </div>
+                                <!-- <li><a href="#"></a></li> -->
+                                <li>
+                                    <a href="./javaExpert.html">JavaExpert</a>
+                                </li>
+                                <li>
+                                    <a href="./webExpert.html">WebExpert</a>
+                                </li>
+                                <li>
+                                    <a href="./androidExpert.html">Android</a>
+                                </li>
+                                <li>
+                                    <a href="./DigitalMarketing.html">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="testing.html">Software Testing</a>
+                                </li>
+                                <li>
+                                    <a href="./ASP_NET.html">Asp.Net</a>
+                                </li>
+                                <li>
+                                    <a href="python.html">Python</a>
+                                </li>
+                                <!-- <li><a href="#"></a></li>            
+                                   <li><a href="#"></a></li>            
+                                   <li><a href="#"></a></li> -->
+                            </br>
+                            <!-- <div class="sub-courses-row1"><span class="fa fa-circle" aria-hidden="true"></span> &nbsp;Java Technologies</div>
+                                   <li><a href="#"></a></li>
+                                   <li><a href="#"></a></li>            
+                                   <li><a href="#"></a></li>             -->
+                            <!-- <li><a href="#"></a></li> -->
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <a href="./clients.html">Placements</a>
+            </li>
+            <li>
+                <a href="./schedules.html">Schedules</a>
+            </li>
+            <li>
+                <a href="./internShip.html">Internship</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+                <div class="col-lg-2">
+                    <!-- <div class="header__widget">
+                    <span>Call us </span>
+                    <h4>9975708774</h4>
+                </div> -->
+                </div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!--Header Section End-->
+    <!-----carousel start---->
+    <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel" style="overflow: hidden;">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+
+        </ol>
+        <div class="carousel-inner" id="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <img src="IMAGE/bg3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block" id="carousel-caption"></div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="IMAGE/bg3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block" id="carousel-caption"></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+                <img src="IMAGE/bg3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block" id="carousel-caption"></div>
+            </div>
+        </div>
+        <a href="#carousel" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#carousel" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../Final Website/home.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+        </ol>
+    </nav>
+    <!-- 3 card start -->
+
+    <div class="row justify-content-center">
+        <div class="col-md-2 col-sm-3 col-xs-12 d-flex justify-content-center">
+            <div class="course-card" data-aos="fade-right">
+                <div class="course-text">
+                    <div>
+                        <a href="#">
+                            <center>
+                                <div class="course-title" style="color: black;">Duration</div>
+                            </center>
+                            <center>
+                                <div class="course-subtitle" style="color: black;">
+                                    <h6>90HRS</h6>
+                                </div>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-xs-12 d-flex justify-content-center">
+            <div class="course-card" data-aos="fade-up">
+                <div class="course-text">
+                    <div>
+                        <a href="#">
+                            <center>
+                                <div class="course-title" style="color: black;">Prerequisites</div>
+                            </center>
+                            <center>
+                                <div class="course-subtitle" style="color: black;">
+                                    <h6> </h6>
+                                </div>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-12 d-flex justify-content-center">
+            <div class="course-card" data-aos="fade-left">
+                <div class="course-text">
+                    <div>
+                        <a href="#">
+                            <center>
+                                <div class="course-title" style="color: black;">Recommended Next Course </div>
+                            </center>
+                            <center>
+                                <div class="course-subtitle" style="color: black;">
+                                    <h6>
+                                        </h2>
+                                </div>
+                            </center>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 card end -->
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Content area end -->
+
+
+
+    <!--Course Details start-->
+    <div class="container">
+        <div class="course-details-text-box">
+            <h2 style="margin-bottom: 5px;" data-aos="fade-right">COURSE DETAILS</h2>
+            <h4 style="color: brown;margin-bottom: 5px; margin-left: 10px;" data-aos="fade-right">WHY YOU SHOULD LEARN
+                BOOTSTRAP ?</h4>
+            <ul data-aos="fade-right" style="margin-left: 24px;">
+                <li>
+                    <p>
+                        If you want to quickly create a website without writing tons of CSS from scratch, then Bootstrap
+                        4 might be the framework you’re looking for. In this course,
+                        you’ll see how Bootstrap makes it easy to layout and create interactive and responsive sites.
+                    </p>
+                <li>
+                    <p>
+                        You’ll learn about Bootstrap’s grid system to construct complex layouts.
+                        Then, you’ll style and populate your site using Bootstrap’s utility classes and components.
+                        With Bootstrap, HTML, some familiarity with CSS, and JavaScript, you’ll be making websites in no
+                        time.
+                    </p>
+                </li>
+                </li>
+                <li>
+                    <p>
+                        A website has many different elements such as headings, lists, tables, buttons, forms, etc.
+                        All these fundamental HTML elements have been styled and enhanced with extensible classes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Whether you need drop down menus, pagination or alert boxes, Bootstrap has got your covered.
+                        Styling of every single element follows a consistent theme and if you know LESS, then
+                        customizing it takes just few minutes.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Another useful set of features are the responsive utility classes using which you can make a
+                        certain block of content appear or hide only on
+                        devices based on the size of their screen.
+                        Very handy when you want to hide some content based on screen size.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Responsive structures and styles
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!---button download start-->
+        <div class="download_button" data-aos="fade-right">
+            <a href="../Final Website/PDF/Web_Designer_And_UI_Developer.pptx">
+                Check Syllabus
+                <span class="iconify" data-icon="fa-solid:file-download"></span>
+            </a>
+        </div>
+        <!---button download end -->
+    </div>
+
+
+    <hr>
+    <div class="container">
+        <h4 style="text-align: center;"> Reason why would you like us...</h4>
+        <div class="row" data-aos="zoom-out-down" id="reasons">
+            <div class="column" id="col" data-aos="fade-right">
+                <div class="text-box">
+                    <ul style="padding: 35px;">
+                        <li>Trainer with 12+ Years of Experience
+                        </li>
+                        <li>200 hours of high-quality course
+                        </li>
+                        <li>Best Quality Training
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column" id="col" data-aos="fade-down">
+                <div class="text-box">
+                    <ul style="padding: 35px;">
+                        <li>Live Project Experience
+                        </li>
+                        <li>Demo Lectures are available
+                        </li>
+                        <li>In-depth Course Contents
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column" id="col" data-aos="fade-left">
+                <div class="text-box">
+                    <ul style="padding: 35px;">
+                        <li> Placement Support </li>
+                        <li>Wordpress Design</li>
+                        <li>Individual Focus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4 style="text-align: center; margin-top: 75px;"> Who Can Join Bootstrap Course?</h4>
+        <div class="row" data-aos="zoom-out-down" id="reasons">
+            <div class="column" id="col">
+                <div class="text-box">
+                    <ul style="padding: 35px;">
+                        <li>12th / Graduate std</li>
+                        <li>Job Seekers</li>
+                        <li>Any Graduate/Undergraduate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column" id="col">
+                <div class="text-box">
+                    <ul style="padding: 35px;">
+                        <li> Executives</li>
+                        <li>Enterprenures/Business Owners</li>
+                        <li>Career Changers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="text-box">
+                    <ul style="padding: 35px;">
+                        <li> YouTube Channel Possessor</li>
+                        <li>Startups</li>
+                        <li>IT Specialist</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Course details End-->
+    <!--contact start-->
+    <a href="tel: +91 9975708774" class="call" title="Call Me">
+        <i class="fa fa-phone my-call" style="margin-top: 15px; "></i>
+    </a>
+    <div id="wh-widget-send-button-wrapper" class="wh-widget-send-button-wrapper wh-widget-left">
+        <div class="wh-widget-hello-popup-wrapper wh-popup-left wh-hide popup-slide popup-slide-in" id="wh-popup-hello">
+            <div class="wh-widget-hello-popup">
+                <div class="wh-widget-hello-popup-close" wh-click="closeHelloPopup">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                        </path>
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                    </svg>
+                </div>
+                <div class="wh-widget-hello-popup-content">
+                    <div class="wh-widget-hello-popup-content-logo">
+                        <img wh-src="logoUrl" alt="">
+                    </div>
+                    <div class="wh-widget-hello-popup-content-text" wh-click="showMessengers">
+                        <a wh-href="href" wh-target="target">
+                            <div wh-html-br="text"></div>
+                        </a>
+                    </div>
+                    <div class="wh-clear"></div>
+                </div>
+                <div class="wh-messengers wh-hide" wh-multi-class="{'wh-hide': '!showMessengersIcons'}">
+                    <ul wh-html-element="buttons"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-placement" class="popup-slide"></div>
+        <div id="wh-call-to-action" class=" wh-animation-out wh-hide" wh-click="clickOnCallToAction" style="top: 29px;">
+            <a wh-href="href" wh-target="target" href="https://wa.me/919975708774" target="_blank">
+                <div class="wh-call-to-action-content" wh-html-unsafe="text">Message us</div>
+            </a>
+        </div>
+        <div id="wh-widget-send-button-wrapper-list" class=" wh-widget-send-button-wrapper-list">
+            <a class=" wh-widget-button wh-widget-button-activator" href="https://wa.me/919975708774" target="_blank">
+                <div class=" wh-widget-button-icon wh-messenger-bg-whatsapp">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="-9 -10 41 44" class="wh-messenger-svg-close wh-svg-close">
+                            <path
+                                d=" M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 32 32" class="wh-messenger-svg-whatsapp wh-svg-icon">
+                            <path
+                                d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class=" mes-us">WhatsApp</div>
+                <div class=" clear"></div>
+            </a>
+            <a class=" wh-widget-send-button-get-button"
+                href="https://getbutton.io/?utm_campaign=multy_widget&amp;utm_medium=widget&amp;utm_source=promo"
+                target="_blank">Get Button</a>
+            <div class=" clear"></div>
+        </div>
+        <div class=" clear"></div>
+    </div>
+    <!--contact end-->
+    <!--footer start-->
+    <footer class="footer set-bg" style="background-color: black;" data-setbg="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <!-- <a href="#"><img src="img/logo.png" alt=""></a> -->
+                            <h2 style="color: orange;">OrangeItech</h2>
+                        </div>
+                        <p>
+                            Rajdhani Complex, OfficeNo. A/408, 4th Floor, Near Shankar Maharaj Math
+                            <br>
+                            Pune - Satara Road, Pune-411043
+                        </p>
+                        <ul>
+                            <li>Info@orangeitech.in</li>
+                            <li>+91 9975708774</li>
+                        </ul>
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/orangeitech">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/orangeitech">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Company</h6>
+                        <ul>
+                            <li>
+                                <a href="./about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./internShip.html">Internship</a>
+                            </li>
+                            <li>
+                                <a href="./schedules.html">Schedules</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#">Placements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Courses</h6>
+                        <ul>
+                            <li>
+                                <a href="./javaExpert.html">JavaExpert</a>
+                            </li>
+                            <li>
+                                <a href="./webExpert.html">WebExpert</a>
+                            </li>
+                            <li>
+                                <a href="./androidExpert.html">Android</a>
+                            </li>
+                            <li>
+                                <a href="./python.html">Python</a>
+                            </li>
+                            <li>
+                                <a href="./DigitalMarketingCource.html">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Software Testing</a>
+                            </li>
+                            <li>
+                                <a href="#">.Net</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__address">
+                        <h6>Get In Touch</h6>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="contact__form">
+                                    <form action="#">
+                                        <div class="row" style="flex-direction: column;">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <input type="text" placeholder="Name" style="width:190%;height: 34px;">
+                                            </div>
+                                            <br>
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <input type="text" style="margin-top: -36px;width: 190%;height: 34px;"
+                                                    placeholder="Email">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <textarea style="height: 79px;width: 84%;"
+                                                    placeholder="Message"></textarea>
+                                                <button type="submit" class="site-btn">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-7" id="copyright">
+                        <div class="">
+                            <p>
+                                Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved | This Website is made by
+                                <a href="https://orangeitech.in" target="_blank"
+                                    style="color: #f1efef; font-weight: bolder;">Orange Itech</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="copyright__widget ">
+                            <a href="#">Terms of use</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 1000,
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.breadcrumb-option {
+  padding-top: 242px;
+  padding-bottom: 160px;
+}
+p {
+  color: black;
+}
+.footer p,
+a {
+  color: #dacdcd;
+}
+.footer__widget ul li a {
+  color: #dacdcd;
+}
+
+.footer__address ul li,
+.footer__about ul li {
+  font-size: 15px;
+  list-style: none;
+  line-height: 26px;
+  color: #dacdcd;
+}
+.section-title h2 {
+  font-size: 32px;
+}
+.contact__form form input {
+  height: 34px;
+  width: 190%;
+}
+
+@media (max-width: 576px) {
+  .contact__form form input {
+    height: 34px;
+    width: 83%;
+  }
+}
+.site-btn {
+  font-size: 16px;
+  color: #ffffff;
+  background: orange;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 6px;
+}
+.site-btn:hover {
+  background-color: gray;
+  transition: 0.5s;
+}
+

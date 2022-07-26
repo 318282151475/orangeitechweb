@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="English">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OrangeItech | DataStructure</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/cources.css" type="text/css">
+    <link rel="stylesheet" href="css/tabdesign.css" type="text/css">
+    <link rel="stylesheet" href="css/newli.css" type="text/css">
+    <link rel="stylesheet" href="css/style1.css" type="text/css">
+    <link rel="shortcut icon" href="img/icon.jpg">
+    <link rel="stylesheet" href="css/buttonIcon.css" type="text/css">
+    <style>
+        .call {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 23px;
+            left: 20px;
+            background-color: #4dc247;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 25px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+    </style>
+    <style>
+        .course-content-points {
+            text-transform: none;
+            font-size: 14px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            margin: 0;
+            color: #111111;
+            font-weight: 100;
+            font-family: "Aldrich", sans-serif;
+        }
+        
+        li {
+            margin-bottom: 0px;
+            font-size: 12px;
+            color: rgb(65, 60, 60);
+        }
+        
+        .key_features_list li {
+            color: rgb(44, 39, 39);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 7px 25px;
+            box-shadow: 0px 0px 5px 1px #EDEDED;
+            background-color: #fff;
+            box-shadow: 0px 0px 4px 0 rgb(235, 235, 235);
+            margin: 10px;
+        }
+        
+        .key_features_list li::before {
+            content: "";
+            background-image: url('img/correct.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            padding-right: 7px;
+            display: inline-block;
+            margin-right: 25px;
+        }
+        
+        .course-details {
+            color: #666;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e8e8e8;
+            padding-left: 25px;
+        }
+        
+        .diploma-cources-bitcode .hoc {
+            max-width: 100%;
+            padding: 60px 20px;
+        }
+        
+        .diploma-cources-bitcode h3 {
+            font-size: 45px;
+            font-weight: 300;
+            text-transform: none;
+            margin-bottom: 60px;
+        }
+        
+        .dmad-course {
+            width: 100%;
+            background-color: #f8f8f8;
+            /* background-color: #FFFFFF; */
+        }
+        
+        .dmad-course ul {
+            padding: 0;
+            list-style: none;
+        }
+        
+        .diploma-course-text {
+            font-size: 15px;
+            right: 15px;
+            left: 15px;
+        }
+        
+        .diploma-course-text a {
+            text-decoration: none;
+        }
+        
+        .diploma-course-card {
+            width: 200px;
+            height: 130px;
+            border-radius: 0;
+            cursor: pointer;
+            background-color: #fff;
+            padding: 7px;
+            border: solid 1px rgb(212, 207, 207);
+            color: rgb(65, 65, 65);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .diploma-course-card {
+                margin-bottom: 10px;
+            }
+            .diploma-cources-bitcode h3 {
+                font-size: 40px;
+            }
+            .advantage-bitcode h3 {
+                font-size: 40px;
+            }
+            .video-container h3 {
+                font-size: 40px;
+            }
+            .testimonial-container h3 {
+                font-size: 40px;
+            }
+            .gallery-container h3 {
+                font-size: 40px;
+            }
+            .clients-container h3 {
+                font-size: 40px;
+            }
+        }
+        
+        .diploma-course-card:hover {
+            background-color: orange;
+            color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .diploma-course-title {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        
+        .diploma-course-card:hover .diploma-course-title {
+            color: white;
+        }
+        
+        .diploma-course-subtitle {
+            font-size: 13px;
+        }
+        
+        .diploma-course-card:hover .diploma-course-subtitle {
+            color: white;
+        }
+        
+        .footer p,
+        a {
+            color: #dacdcd;
+        }
+        
+        .footer__widget ul li a {
+            color: #dacdcd;
+        }
+        
+        .contact__form form input {
+            height: 34px;
+            width: 190%;
+        }
+        
+        @media (max-width: 576px) {
+            .contact__form form input {
+                height: 34px;
+                width: 83%;
+            }
+        }
+        
+        .site-btn {
+            font-size: 16px;
+            color: #ffffff;
+            background: orange;
+            font-weight: 600;
+            border: none;
+            display: inline-block;
+            padding: 14px 36px;
+            border-radius: 6px;
+        }
+        
+        .site-btn:hover {
+            background-color: gray;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <!-- <div class="offcanvas__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div> -->
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <span>Call us</span>
+            <h4>+91 9975708774</h4>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="Wrapper row0">
+            <a href="https://www.facebook.com/orangeitech">
+                <i class="fa fa-facebook fa-lg" style="color:orange;"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/orangeitech">
+                <i class="fa fa-instagram fa-lg" style="color:orange;"></i>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo" style="float: left;">
+                        <a href="index.html">
+                            <img src="img/logo.png" style=" width:45% !important;
+    height: auto !important;" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Courses</a>
+                                <ul class="dropdown1" style=" width:100% !important;
+                              height: auto !important; background-color: #282A35;">
+                                        <div class="row col-md-12">
+                                            <div class="col-md-3" style="padding-top: 10px;">
+                                                <div class="sub-courses-row1" style="color: white;">
+                                                    <span class="fa fa-circle" aria-hidden="true"></span>
+                                                    &nbsp; Mobile 
+                                                Application 
+                                                Development
+                                                </div>
+                                                <li>
+                                                    <a href="androidExpert.html" style="color: yellow;">Android App Development</a>
+                                                </li>
+                                            </br>
+                                            <div class="sub-courses-row1" style="color: white;">
+                                                <span class="fa fa-circle" aria-hidden="true"></span>
+                                                &nbsp;Database Technologies
+                                            </div>
+                                            <li>
+                                                <a href="./php.html" style="color: yellow;">SQL</a>
+                                            </li>
+                                        </div>
+                                        <div class="col-md-3" style="padding-top: 10px;">
+                                            <div class="sub-courses-row1" style="color: white;">
+                                                <span class="fa fa-circle" aria-hidden="true"></span>
+                                                &nbsp; Programming Languages
+                                            </div>
+                                            <li>
+                                                <a href="./cProgramming.html" style="color: yellow;">C Programming</a>
+                                            </li>
+                                            <li>
+                                                <a href="cplusProg.html" style="color: yellow;">C++ Programming</a>
+                                            </li>
+                                            <li>
+                                                <a href="./ds.html" style="color: yellow;">Data Structure using C, C++</a>
+                                            </li>
+                                            <li>
+                                                <a href="./python.html" style="color: yellow;">Python</a>
+                                            </li>
+                                        </br>
+                                        <div class="sub-courses-row1" style="color: white;">
+                                            <span class="fa fa-circle" aria-hidden="true"></span>
+                                            &nbsp;Java Technologies
+                                        </div>
+                                        <li>
+                                            <a href="javaExpert.html" style="color: yellow;">Core Java</a>
+                                        </li>
+                                        <li>
+                                            <a href="javaExpert.html" style="color: yellow;">Adv. Java(Sarvlet, JSP)</a>
+                                        </li>
+                                        <li>
+                                            <a href="./javaExpert.html" style="color: yellow;">JavaExpert</a>
+                                        </li>
+                                        <!-- <li><a href="#"></a></li> -->
+                                    </div>
+                                    <div class="col-md-3" style="padding-top: 10px;">
+                                        <div class="sub-courses-row1" style="color: white;">
+                                            <span class="fa fa-circle" aria-hidden="true"></span>
+                                            &nbsp;  Web Technologies
+                                        </div>
+                                        <li>
+                                            <a href="./webExpert.html" style="color: yellow;">Web Expert</a>
+                                        </li>
+                                        <li>
+                                            <a href="./angular_js.html" style="color: yellow;">Angular JS</a>
+                                        </li>
+                                        <li>
+                                            <a href="nodejs.html" style="color: yellow;">Node.JS</a>
+                                        </li>
+                                        <li>
+                                            <a href="reactjs.html" style="color: yellow;">React JS and React Native</a>
+                                        </li>
+                                        <li>
+                                            <a href="php.html" style="color: yellow;">PHP/MySQL</a>
+                                        </li>
+                                        <li>
+                                            <a href="webExpert.html" style="color: yellow;">Bootstrap</a>
+                                        </li>
+                                    </br>
+                                    <div class="sub-courses-row1" style="color: white;">
+                                        <span class="fa fa-circle" aria-hidden="true"></span>
+                                        &nbsp; Software Testing Courses
+                                    </div>
+                                    <li>
+                                        <a href="testing.html" style="color: yellow;">Software Testing</a>
+                                    </li>
+                                    <!-- <li><a href="#"></a></li>            
+                                       <li><a href="#"></a></li>             -->
+                                    <!-- <li><a href="#"></a></li> -->
+                                </div>
+                                <div class="col-md-3" style="padding-top: 10px;">
+                                    <div class="sub-courses-row1" style="color: white;">
+                                        <span class="fa fa-circle" aria-hidden="true"></span>
+                                        &nbsp; Industrial Courses
+                                    </div>
+                                    <!-- <li><a href="#"></a></li> -->
+                                    <li>
+                                        <a href="./javaExpert.html" style="color: yellow;">JavaExpert</a>
+                                    </li>
+                                    <li>
+                                        <a href="./webExpert.html" style="color: yellow;">WebExpert</a>
+                                    </li>
+                                    <li>
+                                        <a href="./androidExpert.html" style="color: yellow;">Android</a>
+                                    </li>
+                                    <li>
+                                        <a href="./DigitalMarketing.html" style="color: yellow;">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="testing.html" style="color: yellow;">Software Testing</a>
+                                    </li>
+                                    <li>
+                                        <a href="./ASP_NET.html" style="color: yellow;">Asp.Net</a>
+                                    </li>
+                                    <li>
+                                        <a href="./python.html" style="color: yellow;">Python</a>
+                                    </li>
+                                            <!-- <li><a href="#"></a></li>            
+                                      <li><a href="#"></a></li>            
+                                      <li><a href="#"></a></li> -->
+                                            </br>
+                                            <!-- <div class="sub-courses-row1"><span class="fa fa-circle" aria-hidden="true"></span> &nbsp;Java Technologies</div>
+                                  <li><a href="#"></a></li>
+                                  <li><a href="#"></a></li>            
+                                  <li><a href="#"></a></li> -->
+                                            <!-- <li><a href="#"></a></li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./clients.html">Placements</a>
+                            </li>
+                            <li>
+                                <a href="./schedules.html">Schedules</a>
+                            </li>
+                            <li>
+                                <a href="./internShip.html">Internship</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <!-- <div class="header__widget">
+                        <span>Call us </span>
+                        <h4>9975708774</h4>
+                    </div> --></div>
+            </div>
+            <div class="canvas__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="IMAGE/ds.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Data Structures</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+    </br>
+    <!--<div class="row justify-content-center">
+    <div class="col-md-2 col-sm-3 col-xs-12 d-flex justify-content-center">
+        <div class="course-card">
+            <div class="course-text">
+                <div>
+                    <a href="#">
+                        <center>
+                            <div class="course-title" style="color: black;">Duration</div>
+                        </center>
+                        <center>
+                            <div class="course-subtitle" style="color: black;">
+                                <h6>80HRS</h6>
+                            </div>
+                        </center>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-12 d-flex justify-content-center">
+        <div class="course-card">
+            <div class="course-text">
+                <div>
+                    <a href="#">
+                        <center>
+                            <div class="course-title" style="color: black;">Prerequisites</div>
+                        </center>
+                        <center>
+                            <div class="course-subtitle" style="color: black;">
+                                <h6>C,C++</h6>
+                            </div>
+                        </center>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-3 col-xs-12 d-flex justify-content-center">
+        <div class="course-card">
+            <div class="course-text">
+                <div>
+                    <a href="javaExpert.html">
+                        <center>
+                            <div class="course-title" style="color: black;">Recommended Next Course</div>
+                        </center>
+                        <center>
+                            <div class="course-subtitle" style="color: black;">
+                                <h6>
+                                    Core Java
+                                    </h2>
+                            </div>
+                        </center>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="course_content">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 id="course_content_heading">Course Syllabus</h4>
+            </div>
+        </div>-->
+    <div id="course_contents">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="course-content-points">Algorithms</p>
+                <ul>
+                    <li>Understanding algorithms</li>
+                    <li>How to write algorithms</li>
+                    <li>Optimizing algorithms</li>
+                    <li>Finding time complexity of an Algorithm</li>
+                </ul>
+                <p class="course-content-points">Introduction to Data Structure</p>
+                <ul>
+                    <li>Understanding Data types</li>
+                    <li>What is Data Structure</li>
+                    <li>Need of Data Structure</li>
+                    <li>The Mathematical model</li>
+                </ul>
+                <p class="course-content-points">Lists</p>
+                <ul>
+                    <li>What is List and what is it’s need</li>
+                    <li>
+                        Squentails lists (Arrays)
+                        <ul>
+                            <li>Advantages, Limitations</li>
+                            <li>Implementing sequential lists</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Linked Lists
+                        <ul>
+                            <li>The LinkedList structure</li>
+                            <li>Advantages, Limitations</li>
+                            <li>Singly Linked List</li>
+                            <li>Doubly Linked List</li>
+                            <li>Circular Linked List</li>
+                        </ul>
+                    </li>
+                    <li>Time complexity of Linked List and Sequential lists</li>
+                </ul>
+                <p class="course-content-points">Stacks</p>
+                <ul>
+                    <li>Understanding stacks</li>
+                    <li>Stack usage</li>
+                    <li>
+                        Implementing Stack
+                        <ul>
+                            <li>Sequential implementation</li>
+                            <li>Linked implementation</li>
+                        </ul>
+                    </li>
+                    <li>Double stack and it’s implementation</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="course-content-points">Tree</p>
+                <ul>
+                    <li>Introduction to Tree data structure</li>
+                    <li>Tree usage</li>
+                    <li>
+                        Types of Trees
+                        <ul>
+                            <li>General Tree</li>
+                            <li>Binary Tree</li>
+                            <li>Binary Search Tree</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Binary Search Tree (BST)
+                        <ul>
+                            <li>Understanding Binary Search Tree</li>
+                            <li>BST usage</li>
+                            <li>Insertion and deletion</li>
+                            <li> Understanding BST algorithms</li>
+                            <ul>
+                                <li>Inorder, Preorder, Postorder</li>
+                                <li>BFS and DFS</li>
+                            </ul>
+                    </li>
+                    <li>Time complexity of BST algorithms</li>
+                    <li>Implementing BST using arrays</li>
+                    <li>Constructing BST back using the tree traversals</li>
+                    </ul>
+                    </li>
+                    <li>
+                        Threaded BST
+                        <ul>
+                            <li>Why Threaded BST</li>
+                            <li>Understanding threaded BST</li>
+                            <li>
+                                Threaded BST Algorithms
+                                <ul>
+                                    <li>Insertion and deletion</li>
+                                    <li>Inorder, Preorder, Postorder</li>
+                                </ul>
+                            </li>
+                            <li>Time Complexity of Threaded BST</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Height Balanced Trees (AVL Trees)
+                        <ul>
+                            <li>What is AVL Tree</li>
+                            <li>Balance factor, right heavy and left heavy tree</li>
+                            <li>Height balancing algorithm</li>
+                            <li>Insertion and deletion algorithms</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Few other types of trees
+                        <ul>
+                            <li>Strictly binary tree</li>
+                            <li>Symmetric tree</li>
+                            <li>Red Black Tree</li>
+                        </ul>
+                    </li>
+                    <li>B Tree and B+ Tree</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="course-content-points">Queues</p>
+                <ul>
+                    <li>What is Queue?</li>
+                    <li>Understanding Queue usage</li>
+                    <li>
+                        Implementing Queues
+                        <ul>
+                            <li>Sequential implementation</li>
+                            <li>Linked implementation</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Circular Queue
+                        <ul>
+                            <li>Usage and implementation</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Types of Queue
+                        <ul>
+                            <li>Priority queue</li>
+                            <li>Double ended queue</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="course-content-points">Graphs</p>
+                <ul>
+                    <li>Introduction to Graphs</li>
+                    <li>
+                        Types of Graph
+                        <ul>
+                            <li>Directed Graph</li>
+                            <li>Undirected Graph</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Implementing Graphs
+                        <ul>
+                            <li>Sequential implementation</li>
+                            <li>Linked implementation</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Graph Algorithms
+                        <ul>
+                            <li>BFS</li>
+                            <li>DFS</li>
+                            <li>Shortest Path Algorithm</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Minimal Spanning Tree
+                        <ul>
+                            <li>Creating minimal spanning tree from a graph using</li>
+                            <ul>
+                                <li>Kruskal’s algorithms</li>
+                                <li>Prim’s algorithm</li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="course-content-points">Hash Tables</p>
+                <ul>
+                    <li>The hashing technique</li>
+                    <li>Understanding Hash tables</li>
+                    <li>Time complexity of operations on Hash Table</li>
+                    <li>Collision resolution algorithms</li>
+                    <li>Rehashing</li>
+                    <li>Improving performance using Hash Tables</li>
+                </ul>
+                <p class="course-content-points">Infix, Prefix and Postfix Expression</p>
+                <ul>
+                    <li>Infix to prefix conversion and it’s evaluation</li>
+                    <li>Infix to postfix conversion and it’s evaluation</li>
+                </ul>
+                <p class="course-content-points">Searching Algorithms</p>
+                <ul>
+                    <li>Linear Search</li>
+                    <li>Binary Search</li>
+                    <li>Indexed sequential search</li>
+                    <li>Fibonacci Search</li>
+                </ul>
+                <p class="course-content-points">Sorting Algorithm</p>
+                <ul>
+                    <li>Bubble Sort</li>
+                    <li>Selection Sort</li>
+                    <li>Insertion Sort</li>
+                    <li>Radix Sort</li>
+                    <li>Merge Sort</li>
+                    <li>Quick Sort</li>
+                    <li>Heap Sort</li>
+                </ul>
+                <p class="course-content-points">Finding Time and Space Complexity of Algorithms</p>
+                <ul>
+                    <li>Omega notation</li>
+                    <li>Big O notation</li>
+                </ul>
+            </div>
+
+            <!---button download start-->
+            <div class="download_button" data-aos="fade-right">
+                <a style="color: white;" href="PDF/DATA_STRUCTURE_PPT.pdf" target="_blank">
+            Check Syllabus
+            <span class="iconify" data-icon="fa-solid:file-download"></span>
+        </a>
+            </div>
+            <!---button download end -->
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Client Section Begin -->
+    <!-- <section class="clients spad"> -->
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5">
+                <div class="section-title">
+                    <span>Data Structures</span>
+                    <h2>Course Details</h2>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+                <div class="row">
+                    <p>
+                        This course will cover the most important concepts of Data structure like linked lists, stacks, queues, trees and graphs in depth along with it’s implementation with C++.
+                        <br> The Data structure course will also take you through multiple searching and sorting algorithms
+                        <br> Along with the regular contents the course has special emphasis on time and space complexity of algorithms using Omega and Big O notation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- </section> -->
+    <!-- Client Section End -->
+
+
+    <!-- <div id="key_features" class="outer-div">
+        <h4 id="key_features_heading">Characteristics</h4>
+        <div id="key_features_contents">
+            <div class="row">
+                <div class="col-md-4 key-features-item">
+                    <ul class="key_features_list">
+                        <li>Trainer with 15+ Years of Experience</li>
+                        <li>Best Quality Training</li>
+                        <li>In-depth Course Contents</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 key-features-item">
+                    <ul class="key_features_list">
+                        <li>80 hours of high-quality course contents</li>
+                        <li>Live Project</li>
+                        <li>Best Placement Support</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 key-features-item">
+                    <ul class="key_features_list">
+                        <li>Personal Attention</li>
+                        <li>Technical Lab</li>
+                        <li> Post training support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="tel: +91 9975708774" class="call" title="Call Me">
+        <i class="fa fa-phone my-call" style="margin-top: 15px; "></i>
+    </a>
+    <div id="wh-widget-send-button-wrapper" class="wh-widget-send-button-wrapper wh-widget-left">
+        <div class="wh-widget-hello-popup-wrapper wh-popup-left wh-hide popup-slide popup-slide-in" id="wh-popup-hello">
+            <div class="wh-widget-hello-popup">
+                <div class="wh-widget-hello-popup-close" wh-click="closeHelloPopup">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+                </div>
+                <div class="wh-widget-hello-popup-content">
+                    <div class="wh-widget-hello-popup-content-logo">
+                        <img wh-src="logoUrl" alt="">
+                    </div>
+                    <div class="wh-widget-hello-popup-content-text" wh-click="showMessengers">
+                        <a wh-href="href" wh-target="target">
+                            <div wh-html-br="text"></div>
+                        </a>
+                    </div>
+                    <div class="wh-clear"></div>
+                </div>
+                <div class="wh-messengers wh-hide" wh-multi-class="{'wh-hide': '!showMessengersIcons'}">
+                    <ul wh-html-element="buttons"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup-placement" class="popup-slide"></div>
+        <div id="wh-call-to-action" class=" wh-animation-out wh-hide" wh-click="clickOnCallToAction" style="top: 29px;">
+            <a wh-href="href" wh-target="target" href="https://wa.me/919975708774" target="_blank">
+                <div class="wh-call-to-action-content" wh-html-unsafe="text">Message us</div>
+            </a>
+        </div>
+        <div id="wh-widget-send-button-wrapper-list" class=" wh-widget-send-button-wrapper-list">
+            <a class=" wh-widget-button wh-widget-button-activator" href="https://wa.me/919975708774" target="_blank">
+                <div class=" wh-widget-button-icon wh-messenger-bg-whatsapp">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-9 -10 41 44" class="wh-messenger-svg-close wh-svg-close">
+                        <path d=" M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill-rule="evenodd"></path>
+                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="wh-messenger-svg-whatsapp wh-svg-icon">
+                        <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path>
+                    </svg>
+                    </div>
+                </div>
+                <div class=" mes-us">WhatsApp</div>
+                <div class=" clear"></div>
+            </a>
+            <a class=" wh-widget-send-button-get-button" href="https://getbutton.io/?utm_campaign=multy_widget&amp;utm_medium=widget&amp;utm_source=promo" target="_blank">Get Button</a>
+            <div class=" clear"></div>
+        </div>
+        <div class=" clear"></div>
+    </div>
+    </div>-->
+    <footer class="footer set-bg" style="background-color: black;" data-setbg="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <!-- <a href="#"><img src="img/logo.png" alt=""></a>-->
+                            <h2 style="color: orange;">OrangeItech</h2>
+                        </div>
+                        <p>
+                            Rajdhani Complex, OfficeNo. A/408, 4th Floor, Near Shankar Maharaj Math
+                            <br> Pune - Satara Road, Pune-411043
+                        </p>
+                        <ul>
+                            <li style="color: #dacdcd;">oitpune@gmail.com</li>
+                        <li style="color: #dacdcd;">+91 9975708774 / 9623922545</li>
+                        </ul>
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/orangeitech">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/orangeitech">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Company</h6>
+                        <ul>
+                            <li>
+                                <a href="./about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="./internShip.html">Internship</a>
+                            </li>
+                            <li>
+                                <a href="./schedules.html">Schedules</a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="./clients.html">Placements</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h6>Courses</h6>
+                        <ul>
+                            <li>
+                                <a href="./javaExpert.html">JavaExpert</a>
+                            </li>
+                            <li>
+                                <a href="./webExpert.html">WebExpert</a>
+                            </li>
+                            <li>
+                                <a href="./androidExpert.html">Android</a>
+                            </li>
+                            <li>
+                                <a href="./python.html">Python</a>
+                            </li>
+                            <li>
+                                <a href="./DigitalMarketing.html">Digital Marketing</a>
+                            </li>
+                            <li>
+                                <a href="testing.html">Software Testing</a>
+                            </li>
+                            <li>
+                                <a href="#">.Net</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__address">
+                        <h6>Get In Touch</h6>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="contact__form">
+                                    <form action="#">
+                                        <div class="row" style="flex-direction: column;">
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <input type="text" placeholder="Name">
+                                            </div>
+                                            <br>
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <input type="text" style="margin-top: -36px;" placeholder="Email">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <textarea style="height: 79px;
+    width: 84%;" placeholder="Message"></textarea>
+                                                <button type="submit" class="site-btn">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="copyright__text" style="text-align: center;">
+                            <p>
+                                Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                All rights reserved | This Website is made by
+                                <a href="https://orangeitech.in" target="_blank">Orange Itech</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

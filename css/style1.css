@@ -1,0 +1,76 @@
+
+
+/* Header icon styling */
+
+.row0 {
+    background: #0a0a0a;
+    height: 35x;
+    padding-top: 3px;
+    text-align: right;
+   
+    padding-right: 25px;
+}
+
+
+.course-text {
+	font-size: 15px;
+	right: 15px;
+	left: 15px;
+}
+
+.course-text a {
+	text-decoration: none;
+}
+
+.course-card {
+	width: 200px;
+	height: 130px;
+	border-radius: 0;
+	cursor: pointer;
+	background-color: rgb(247, 217, 171);
+	padding: 7px;
+	border: solid 1px rgb(212, 207, 207);
+	color: rgb(65, 65, 65);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+	.video-container h3 {
+		font-size: 40px;
+	}
+	.testimonial-container h3 {
+		font-size: 40px;
+	}
+	.gallery-container h3 {
+		font-size: 40px;
+	}
+	.clients-container h3 {
+		font-size: 40px;
+	}
+}
+
+.course-card:hover {
+	background-color: orange;
+	color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.course-title {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.course-card:hover .diploma-course-title {
+	color: white;
+}
+
+.course-subtitle {
+	font-size: 13px;
+}
+
+.course-card:hover .diploma-course-subtitle {
+	color: white;
+}

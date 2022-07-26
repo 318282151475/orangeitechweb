@@ -1,0 +1,129 @@
+.breadcrumb-item.active {
+  color: black;
+}
+.breadcrumb-item a:hover {
+  color: orange;
+}
+.breadcrumb {
+  justify-content: center;
+  background: wheat;
+}
+
+#heading {
+  justify-content: center;
+  margin-left: -58px;
+}
+.text-box {
+  width: fit-content;
+}
+#beginer {
+  flex-direction: column;
+  align-content: center;
+  margin-top: 45px;
+}
+
+#head-adv {
+  justify-content: center;
+  margin-left: -58px;
+  margin-top: 29px;
+  margin-bottom: 14px;
+}
+#advance {
+  flex-direction: row;
+  justify-content: center;
+}
+
+#reasons {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.download_button {
+  border: 2px solid black;
+  width: fit-content;
+  padding: 3px;
+  font-size: 20px;
+  border-radius: 13px;
+  background: orange;
+}
+
+.download_button:hover {
+  background: gray;
+}
+
+@media (max-width: 1000px) {
+  #reasons {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    align-items: center;
+    display: block;
+  }
+  #col {
+    margin-bottom: -68px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__logo {
+    width: 35%;
+  }
+}
+.call {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 23px;
+  left: 20px;
+  background-color: #4dc247;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 50%);
+  z-index: 100;
+}
+@media (max-width: 784px) {
+  #carousel {
+    height: 450px;
+  }
+  #carousel-inner {
+    height: 450px;
+  }
+  .d-block {
+    height: 450px;
+  }
+}
+.footer p,
+a {
+  color: #dacdcd;
+}
+.footer__widget ul li a {
+  color: #dacdcd;
+}
+.contact__form form input {
+  height: 34px;
+  width: 190%;
+}
+
+@media (max-width: 576px) {
+  .contact__form form input {
+    height: 34px;
+    width: 83%;
+  }
+}
+.site-btn {
+  font-size: 16px;
+  color: #ffffff;
+  background: orange;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 6px;
+}
+.site-btn:hover {
+  background-color: gray;
+  transition: 0.5s;
+}

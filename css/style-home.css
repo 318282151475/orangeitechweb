@@ -1,0 +1,132 @@
+body {
+  font-family: sans-serif;
+}
+.card {
+  padding: 33px;
+  border: none;
+}
+.card-group {
+  text-align: center;
+}
+
+@media (max-width: 784px) {
+  .card-group {
+    flex-direction: column;
+    align-content: center;
+  }
+  .card-img-top {
+    height: auto;
+    width: 220px;
+  }
+  .card {
+    margin-top: -58px;
+  }
+  #carousel {
+    height: 550px;
+  }
+  #carousel-inner {
+    height: 550px;
+  }
+  .d-block {
+    height: 550px;
+  }
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+#features {
+  text-align: center;
+  padding: 0px;
+  margin-top: 0px;
+}
+#style1 {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-left: -0.1px;
+}
+#style2 {
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  margin-top: -0.9px;
+}
+
+@media (max-width: 767px) {
+  #style1 {
+    border-left: none;
+    border-bottom: none;
+  }
+  #style2 {
+    border-right: none;
+    border-top: none;
+  }
+}
+p {
+  color: black;
+}
+
+.clearfix {
+  background: #fbefd9;
+}
+
+.footer p,
+a {
+  color: #dacdcd;
+}
+.footer__widget ul li a {
+  color: #dacdcd;
+}
+
+.call {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 23px;
+  left: 20px;
+  background-color: #4dc247;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 50%);
+  z-index: 100;
+}
+.contact__form form input {
+  height: 34px;
+  width: 190%;
+}
+
+@media (max-width: 576px) {
+  .contact__form form input {
+    height: 34px;
+    width: 83%;
+  }
+}
+.site-btn {
+  font-size: 16px;
+  color: #ffffff;
+  background: orange;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 6px;
+}
+.site-btn:hover {
+  background-color: gray;
+  transition: 0.5s;
+}
